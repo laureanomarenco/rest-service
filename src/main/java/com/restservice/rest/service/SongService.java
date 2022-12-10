@@ -35,6 +35,8 @@ public class SongService {
         existingSong.setTitle(songRequest.getTitle());
         existingSong.setAuthor(songRequest.getAuthor());
         existingSong.setDescription(songRequest.getDescription());
+        existingSong.setLyrics(songRequest.getLyrics());
+        existingSong.setChords(songRequest.getChords());
         existingSong.setYear(songRequest.getYear());
 
         return repository.save(existingSong);

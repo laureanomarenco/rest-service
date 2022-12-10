@@ -4,22 +4,23 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "song")
+import java.util.List;
+
+@Document(collection = "user")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Song {
+public class User {
     @Id
-    private String songId;
-    private String title;
-    private String author;
-    private int year;
-    private String description;
-    private String lyrics;
-    private String chords;
+    private String userId;
 
-    private User user;
+    private String username;
+    private String password;
+
+    @DBRef
+    List<Song> songs;
 
 }

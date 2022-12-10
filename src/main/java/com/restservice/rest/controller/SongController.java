@@ -25,10 +25,10 @@ public class SongController {
         return service.findAllSongs();
     }
     @GetMapping("/{songId}")
-    public Song getSongById(String songId){
+    public Song getSongById(@PathVariable String songId){
         return service.findSongById(songId);
     }
-    @GetMapping("/{title}")
+    @GetMapping("/title/{title}")
     public List<Song> getSongByTitle(@PathVariable String title){
         return service.findSongByTitle(title);
     }
