@@ -1,6 +1,6 @@
-package com.restservice.rest.repository;
+package com.restservice.rest.global.repository;
 
-import com.restservice.rest.model.Song;
+import com.restservice.rest.global.model.Song;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 

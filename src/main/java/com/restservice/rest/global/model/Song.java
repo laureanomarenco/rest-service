@@ -1,5 +1,6 @@
-package com.restservice.rest.model;
+package com.restservice.rest.global.model;
 
+import com.restservice.rest.security.entity.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

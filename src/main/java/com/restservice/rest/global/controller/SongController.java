@@ -1,7 +1,7 @@
-package com.restservice.rest.controller;
+package com.restservice.rest.global.controller;
 
-import com.restservice.rest.model.Song;
-import com.restservice.rest.service.SongService;
+import com.restservice.rest.global.service.SongService;
+import com.restservice.rest.global.model.Song;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

@@ -1,7 +1,7 @@
-package com.restservice.rest.service;
+package com.restservice.rest.global.service;
 
-import com.restservice.rest.model.Song;
-import com.restservice.rest.repository.SongRepository;
+import com.restservice.rest.global.model.Song;
+import com.restservice.rest.global.repository.SongRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
