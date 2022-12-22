@@ -1,12 +1,7 @@
 package com.restservice.rest.security.entity;
 
-import com.restservice.rest.global.model.Song;
 import com.restservice.rest.security.enums.RoleEnum;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.List;
@@ -21,7 +16,7 @@ public class User {
     private String password;
     List<RoleEnum> roles;
 
-    public User() {
+    public User(int id, String username, String email, String password, List<RoleEnum> roles) {
     }
 
     public User(String userId, String username, String email, String password, List<RoleEnum> roles) {
