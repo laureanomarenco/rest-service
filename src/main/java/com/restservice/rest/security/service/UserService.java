@@ -7,12 +7,12 @@ import com.restservice.rest.security.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.print.AttributeException;
 import javax.print.PrintException;
 import java.util.List;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
+//Revue required
 @Service
 public class UserService {
     @Autowired
@@ -29,6 +29,5 @@ public class UserService {
         User user = new User(id, dto.getUsername(), dto.getEmail(), dto.getPassword(), roles);
         return userRepository.save(user);
     }
-
 
 }

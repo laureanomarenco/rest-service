@@ -13,7 +13,7 @@ public class CreateUserDTO {
     private String email;
     @NotBlank(message = "password is required")
     private String password;
-    @NotBlank(message = "role is required")
+
     List<String> roles;
 
     public CreateUserDTO() {
